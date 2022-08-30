@@ -1,0 +1,66 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    font-family: 'Caveat', cursive;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.board {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.play {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+.title {
+    text-align: center;
+}
+
+.reset {
+    margin:0 auto;
+    display:block;
+    cursor: pointer;
+    background-color: #006a8d; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+input {
+    margin: 10px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    height: 50%;
+    width: 50%;
+    table-layout: fixed;
+}
+
+td {
+    border: 1px solid rgb(0,0,0);
+    height: 100px;
+    text-align: center;
+    font-size: 60px;
+}

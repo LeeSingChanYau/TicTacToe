@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="title">Alan's Tic Tac Toe</h1>
+        <div class="board">
+            <table class="play">
+                <tr class="row">
+                    <td id="00" onclick="clicked(this.id)"></td>
+                    <td id="01" onclick="clicked(this.id)"></td>
+                    <td id="02" onclick="clicked(this.id)"></td>
+                </tr>
+                <tr class="row">
+                    <td id="10" onclick="clicked(this.id)"></td>
+                    <td id="11" onclick="clicked(this.id)"></td>
+                    <td id="12" onclick="clicked(this.id)"></td>
+                </tr>
+                <tr class="row">
+                    <td id="20" onclick="clicked(this.id)"></td>
+                    <td id="21" onclick="clicked(this.id)"></td>
+                    <td id="22" onclick="clicked(this.id)"></td>
+                </tr>
+            </table>
+            <button class="reset" onclick="refreshBoard()">Reset</button>
+        </div>
+        
+        
+        <script src="index.js" async defer></script>
+    </body>
+</html>
